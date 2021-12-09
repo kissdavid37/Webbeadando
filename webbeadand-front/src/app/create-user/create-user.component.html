@@ -1,0 +1,38 @@
+<div class="col-md-6 offset-md-3">
+<h3>Felhasználó hozzáadása</h3>
+<form (ngSubmit)="onsubmit()">
+    <div class="form-group">
+        <label>Vezetéknév</label>
+        <input type="text" class="form-control" id="firstName"
+        [(ngModel)]="user.firstName"  name ="firstName">
+    </div>
+
+    <div class="form-group">
+        <label>Keresztnév</label>
+        <input type="text" class="form-control" id="lastName"
+        [(ngModel)]="user.lastName" name ="lastName">
+    </div>
+
+    <div class="form-group">
+        <label>Felhasználónév</label>
+        <input type="text" class="form-control" id="userName"
+        [(ngModel)]="user.userName"  name ="userName">
+    </div>
+
+    <div class="form-group">
+        <label>Jelszó</label>
+        <input type="text" class="form-control" id="password"
+        [(ngModel)]="user.password" name ="password">
+    </div>
+
+    <div class="form-group">
+        <label>Szerepkör</label>
+        <input type="text" class="form-control" id="roles"
+        [(ngModel)]="user.roles" name ="roles">
+    </div>
+    
+    <button class="btn btn-success" id="sc" type="submit">Mentés</button>
+
+</form>
+</div>
+

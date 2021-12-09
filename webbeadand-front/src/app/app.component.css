@@ -1,0 +1,30 @@
+.nav{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(47, 109, 224);
+    height: 50px;
+    list-style: none;
+    
+    
+}
+.lista{
+    list-style: none;
+    display: inline;
+    vertical-align:middle;
+    padding: 5px;
+}
+a{
+    color: white;
+}
+.xx{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.lista:hover{
+    padding: 5px;
+    background-color:gold;
+    border-radius: 15px;
+}
+

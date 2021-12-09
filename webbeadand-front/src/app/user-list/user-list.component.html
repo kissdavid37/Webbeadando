@@ -1,0 +1,27 @@
+<h2>Felhasználók listája</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Vezetéknév</th>
+            <th>Keresztnév</th>
+            <th>Jelszó</th>
+            <th>Szerepkör</th>
+            <th>Felhasználónév</th>
+            <th>Parancs</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.firstName}}</td>
+            <td>{{user.lastName}}</td>
+            <td>{{user.password}}</td>
+            <td>{{user.roles}}</td>
+            <td>{{user.userName}}</td>
+            <td>
+                <button (click)="updateUser(user.id)" class="btn btn-info">Szerkeszt</button>
+                <button (click)="deleteUser(user.id)" class="btn btn btn-dark" style="margin-left:10px">Töröl</button>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
